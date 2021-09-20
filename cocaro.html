@@ -7,7 +7,7 @@
 <body>
 <h3> cờ caro </h3>
 <p id="carogame"></p>
-<button onclick="changevalue()"></button>
+<button onclick="changeValue()"></button>
 </body>
 </html>
 <script>
@@ -17,4 +17,13 @@
     for (i = 0; i < 5; i ++) {
         board[i]
     }
+    for (let i = 0; i < 5; i++) {
+        data += '<br>'
+        for (let j = 0 ; j < 5; j++) {
+            data + board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;";
+
+        }
+    }
+    data += "<br/><br/><button onclick=\"changeValue()\"></button>"
+    b.innerHTML = data;
 </script>
